@@ -33,6 +33,12 @@ https://rp.certification.openid.net:8080/damienbod.id_token/rp-nonce-unless-code
 https://rp.certification.openid.net:8080/damienbod.id_token/rp-response_type-id_token/registration
 
 
+https://rp.certification.openid.net:8080/damienbod.config/rp-discovery-issuer-not-matching-config/registration
+https://rp.certification.openid.net:8080/damienbod.config/rp-discovery-jwks_uri-keys/registration
+https://rp.certification.openid.net:8080/damienbod.config/rp-discovery-openid-configuration/registration
+https://rp.certification.openid.net:8080/damienbod.config/rp-key-rotation-op-sign-key-native/registration
+
+
 
 
 
