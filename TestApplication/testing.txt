@@ -9,10 +9,10 @@ complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_to
 complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-iat/registration
 complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-issuer-mismatch/registration
 complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-kid-absent-multiple-jwks/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-kid-absent-single-jwks/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-sig-rs256/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-sub/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-nonce-invalid/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-kid-absent-single-jwks/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-sig-rs256/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-sub/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-nonce-invalid/registration
 https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-nonce-unless-code-flow/registration
 https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-response_type-id_token+token/registration
 https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-scope-userinfo-claims/registration
