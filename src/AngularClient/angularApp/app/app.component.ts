@@ -36,14 +36,6 @@ export class AppComponent implements OnInit {
 
     login() {
         this.securityService.authorize();
-        //// https://rp.certification.openid.net:8080/damienbod.id_token-token/rp-response_type-id_token+token/registration
-        //console.log('start login');
-        //this.registerClient()
-        //    .subscribe((data: any) => {
-        //        this.authConfiguration.client_id = data.client_id;
-        //        console.log(data);
-        //        this.securityService.authorize();
-        //    });
     }
 
     refreshSession() {
@@ -55,22 +47,4 @@ export class AppComponent implements OnInit {
         console.log('start logoff');
         this.securityService.logoff();
     }
-
-    //private registerClient = (): Observable<any> => {
-
-    //    let headers = new Headers();
-    //    headers.append('Content-Type', 'application/json');
-    //    headers.append('Accept', 'application/json');
-    //    headers.append('access-control-allow-origin', '*');
-
-    //    let url = 'https://rp.certification.openid.net:8080/damienbod.id_token-token/rp-response_type-id_token+token/registration'; // this.testurl + '/registration';
-    //    let jsonbody = '{ "application_type": "web", "redirect_uris": [ "https://localhost:44386" ], "response_types": [ "id_token", "id_token token" ]}';
-    //    console.log(url);
-    //    console.log(jsonbody);
-
-    //    return this.http.post(url, {
-    //        headers: headers,
-    //        body: jsonbody
-    //    }).map((res: any) => res.json());
-    //}
 }
