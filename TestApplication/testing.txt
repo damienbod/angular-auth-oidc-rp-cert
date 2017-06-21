@@ -3,10 +3,10 @@ https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token
 { "application_type": "web", "redirect_uris": [ "https://localhost:44386" ], "response_types": [ "id_token", "id_token token" ], "grant_types": ["implicit","authorization_code"]}
 
 
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-aud/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-bad-at_hash/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-bad-sig-rs256/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-iat/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-aud/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-bad-at_hash/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-bad-sig-rs256/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-iat/registration
 https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-issuer-mismatch/registration
 https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-kid-absent-multiple-jwks/registration
 https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token_token/rp-id_token-kid-absent-single-jwks/registration
