@@ -1,0 +1,26 @@
+1498114234.999 init ========== Test tool version:1.0.0 ==========
+1498114235.0 http request {
+    "endpoint": "/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration",
+    "method": "POST"
+}
+1498114235.002 request {
+    "name": "ClientRegistration",
+    "path": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration/"
+}
+1498114235.002 RegistrationRequest {
+    "application_type": "web",
+    "grant_types": [
+        "implicit",
+        "authorization_code"
+    ],
+    "redirect_uris": [
+        "https://localhost:44386"
+    ],
+    "response_types": [
+        "id_token",
+        "id_token token"
+    ]
+}
+1498114235.005 http response status_code:201
+1498114235.005 response {"client_id": "Owh0g9U0k1QH", "registration_client_uri": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/registration?client_id=Owh0g9U0k1QH", "client_secret_expires_at": 1498200635, "client_secret": "5fac76a808d5fd912f4ad3a4d18eef337e0a634d0f23cddc274d4a4e", "grant_types": ["implicit", "authorization_code"], "client_id_issued_at": 1498114235, "response_types": ["id_token", "id_token token"], "redirect_uris": ["https://localhost:44386"], "registration_access_token": "fGMm1tgbdmRlABHndXJLc3JE2f9gUVS7", "application_type": "web"}
+

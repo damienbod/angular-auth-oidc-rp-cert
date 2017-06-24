@@ -37,12 +37,12 @@ import { AuthModule, OidcSecurityService, AuthConfiguration } from 'angular-auth
 
 export class AppModule {
     constructor(public authConfiguration: AuthConfiguration) {
-        this.authConfiguration.stsServer = 'https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_token/rp-response_type-id_token';
+        this.authConfiguration.stsServer = 'https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-openid-configuration';
         this.authConfiguration.redirect_url = 'https://localhost:44386';
         // The Client MUST validate that the aud (audience) Claim contains its client_id value registered at the Issuer identified by the iss (issuer) Claim as an audience.
         // The ID Token MUST be rejected if the ID Token does not list the Client as a valid audience, or if it contains additional audiences not trusted by the Client.
-        this.authConfiguration.client_id = 'JXer1ecyOzte';
-        this.authConfiguration.response_type = 'id_token';
+        this.authConfiguration.client_id = 'v4UmV1nGHaVc';
+        this.authConfiguration.response_type = 'id_token token';
         this.authConfiguration.scope = 'openid email profile';
         this.authConfiguration.post_logout_redirect_uri = 'https://localhost:44386/Unauthorized';
         this.authConfiguration.start_checksession = false;
