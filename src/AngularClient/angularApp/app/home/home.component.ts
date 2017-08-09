@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     name = 'none';
     email = 'none';
     userDataSubscription: Subscription;
-    userData: boolean;
+    userData: any;
     isAuthorizedSubscription: Subscription;
     isAuthorized: boolean;
 
@@ -30,12 +30,14 @@ export class HomeComponent implements OnInit, OnDestroy {
         this.userDataSubscription = this.oidcSecurityService.getUserData().subscribe(
             (userData: any) => {
 
+                this.userData = userData;
                 if (userData != '') {
                     this.name = userData.name;
                     this.email = userData.email;
+                    console.log(userData);
                 }
 
-                console.log('userData getting data');
+                console.log('userData got data');
             });
     }
 
