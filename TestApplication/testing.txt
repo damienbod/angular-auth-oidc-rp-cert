@@ -36,7 +36,7 @@ complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.id_to
 complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration
 complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-jwks_uri-keys/registration
 complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-openid-configuration/registration
-https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-key-rotation-op-sign-key-native/registration
+complete https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-key-rotation-op-sign-key-native/registration
 
 
 
