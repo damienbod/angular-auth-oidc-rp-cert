@@ -1,13 +1,13 @@
-1498114234.999 init ========== Test tool version:1.0.0 ==========
-1498114235.0 http request {
+1502453131.912 init ========== Test tool version:1.0.4 ==========
+1502453131.912 http request {
     "endpoint": "/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration",
     "method": "POST"
 }
-1498114235.002 request {
+1502453131.913 request {
     "name": "ClientRegistration",
     "path": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration/"
 }
-1498114235.002 RegistrationRequest {
+1502453131.913 RegistrationRequest {
     "application_type": "web",
     "grant_types": [
         "implicit",
@@ -21,6 +21,455 @@
         "id_token token"
     ]
 }
-1498114235.005 http response status_code:201
-1498114235.005 response {"client_id": "Owh0g9U0k1QH", "registration_client_uri": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/registration?client_id=Owh0g9U0k1QH", "client_secret_expires_at": 1498200635, "client_secret": "5fac76a808d5fd912f4ad3a4d18eef337e0a634d0f23cddc274d4a4e", "grant_types": ["implicit", "authorization_code"], "client_id_issued_at": 1498114235, "response_types": ["id_token", "id_token token"], "redirect_uris": ["https://localhost:44386"], "registration_access_token": "fGMm1tgbdmRlABHndXJLc3JE2f9gUVS7", "application_type": "web"}
+1502453131.914 http response status_code:201
+1502453131.914 response {"client_secret_expires_at": 1502539531, "application_type": "web", "grant_types": ["implicit", "authorization_code"], "client_id_issued_at": 1502453131, "redirect_uris": ["https://localhost:44386"], "client_id": "FTMuhVTZ61bG", "response_types": ["id_token", "id_token token"], "registration_client_uri": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/registration?client_id=FTMuhVTZ61bG", "registration_access_token": "YOZ6MEKJsmUlABnKgumNRrG9P1Yi6LBJ", "client_secret": "7aa02a08ad14ae6ae6d53b28eb3d1ea184e625df399230680f1f236c"}
+
+1502453296.674 init ========== Test tool version:1.0.4 ==========
+1502453296.675 http request {
+    "endpoint": "/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/.well-known/openid-configuration",
+    "method": "GET"
+}
+1502453296.676 request {
+    "name": "ProviderInfo",
+    "path": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/.well-known/openid-configuration/"
+}
+1502453296.678 ProviderConfigurationResponse {
+    "acr_values_supported": [
+        "PASSWORD"
+    ],
+    "authorization_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/authorization",
+    "claim_types_supported": [
+        "normal",
+        "aggregated",
+        "distributed"
+    ],
+    "claims_parameter_supported": true,
+    "claims_supported": [
+        "locale",
+        "updated_at",
+        "email",
+        "profile",
+        "family_name",
+        "website",
+        "picture",
+        "gender",
+        "name",
+        "middle_name",
+        "email_verified",
+        "zoneinfo",
+        "preferred_username",
+        "phone_number_verified",
+        "given_name",
+        "phone_number",
+        "address",
+        "nickname",
+        "sub",
+        "birthdate"
+    ],
+    "end_session_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/end_session",
+    "grant_types_supported": [
+        "authorization_code",
+        "implicit",
+        "urn:ietf:params:oauth:grant-type:jwt-bearer"
+    ],
+    "id_token_encryption_alg_values_supported": [
+        "RSA1_5",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "A128KW",
+        "A192KW",
+        "A256KW",
+        "ECDH-ES",
+        "ECDH-ES+A128KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A256KW"
+    ],
+    "id_token_encryption_enc_values_supported": [
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512",
+        "A128GCM",
+        "A192GCM",
+        "A256GCM"
+    ],
+    "id_token_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512",
+        "none"
+    ],
+    "issuer": "https://example.com",
+    "jwks_uri": "https://rp.certification.openid.net:8080/static/jwks_IdzqmoaS03GGiPRK.json",
+    "registration_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration",
+    "request_object_encryption_alg_values_supported": [
+        "RSA1_5",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "A128KW",
+        "A192KW",
+        "A256KW",
+        "ECDH-ES",
+        "ECDH-ES+A128KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A256KW"
+    ],
+    "request_object_encryption_enc_values_supported": [
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512",
+        "A128GCM",
+        "A192GCM",
+        "A256GCM"
+    ],
+    "request_object_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512",
+        "none"
+    ],
+    "request_parameter_supported": true,
+    "request_uri_parameter_supported": true,
+    "require_request_uri_registration": true,
+    "response_modes_supported": [
+        "query",
+        "fragment",
+        "form_post"
+    ],
+    "response_types_supported": [
+        "code",
+        "id_token",
+        "id_token token",
+        "code id_token",
+        "code token",
+        "code id_token token"
+    ],
+    "scopes_supported": [
+        "openid",
+        "offline_access",
+        "email",
+        "address",
+        "profile",
+        "phone",
+        "openid"
+    ],
+    "subject_types_supported": [
+        "public",
+        "pairwise"
+    ],
+    "token_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/token",
+    "token_endpoint_auth_methods_supported": [
+        "client_secret_post",
+        "client_secret_basic",
+        "client_secret_jwt",
+        "private_key_jwt"
+    ],
+    "token_endpoint_auth_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512"
+    ],
+    "userinfo_encryption_alg_values_supported": [
+        "RSA1_5",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "A128KW",
+        "A192KW",
+        "A256KW",
+        "ECDH-ES",
+        "ECDH-ES+A128KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A256KW"
+    ],
+    "userinfo_encryption_enc_values_supported": [
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512",
+        "A128GCM",
+        "A192GCM",
+        "A256GCM"
+    ],
+    "userinfo_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/userinfo",
+    "userinfo_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512",
+        "none"
+    ],
+    "version": "3.0"
+}
+1502453296.678 response {"token_endpoint_auth_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512"], "request_object_encryption_enc_values_supported": ["A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512", "A128GCM", "A192GCM", "A256GCM"], "claims_supported": ["locale", "updated_at", "email", "profile", "family_name", "website", "picture", "gender", "name", "middle_name", "email_verified", "zoneinfo", "preferred_username", "phone_number_verified", "given_name", "phone_number", "address", "nickname", "sub", "birthdate"], "subject_types_supported": ["public", "pairwise"], "end_session_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/end_session", "issuer": "https://example.com", "request_uri_parameter_supported": true, "scopes_supported": ["openid", "offline_access", "email", "address", "profile", "phone", "openid"], "request_object_encryption_alg_values_supported": ["RSA1_5", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A192KW", "A256KW", "ECDH-ES", "ECDH-ES+A128KW", "ECDH-ES+A192KW", "ECDH-ES+A256KW"], "token_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/token", "id_token_encryption_alg_values_supported": ["RSA1_5", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A192KW", "A256KW", "ECDH-ES", "ECDH-ES+A128KW", "ECDH-ES+A192KW", "ECDH-ES+A256KW"], "grant_types_supported": ["authorization_code", "implicit", "urn:ietf:params:oauth:grant-type:jwt-bearer"], "authorization_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/authorization", "userinfo_encryption_alg_values_supported": ["RSA1_5", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A192KW", "A256KW", "ECDH-ES", "ECDH-ES+A128KW", "ECDH-ES+A192KW", "ECDH-ES+A256KW"], "id_token_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512", "none"], "request_parameter_supported": true, "require_request_uri_registration": true, "response_types_supported": ["code", "id_token", "id_token token", "code id_token", "code token", "code id_token token"], "claims_parameter_supported": true, "acr_values_supported": ["PASSWORD"], "response_modes_supported": ["query", "fragment", "form_post"], "id_token_encryption_enc_values_supported": ["A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512", "A128GCM", "A192GCM", "A256GCM"], "registration_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration", "userinfo_encryption_enc_values_supported": ["A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512", "A128GCM", "A192GCM", "A256GCM"], "userinfo_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512", "none"], "version": "3.0", "token_endpoint_auth_methods_supported": ["client_secret_post", "client_secret_basic", "client_secret_jwt", "private_key_jwt"], "claim_types_supported": ["normal", "aggregated", "distributed"], "jwks_uri": "https://rp.certification.openid.net:8080/static/jwks_IdzqmoaS03GGiPRK.json", "userinfo_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/userinfo", "request_object_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512", "none"]}
+
+1502453304.31 init ========== Test tool version:1.0.4 ==========
+1502453304.31 http request {
+    "endpoint": "/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/.well-known/openid-configuration",
+    "method": "GET"
+}
+1502453304.311 request {
+    "name": "ProviderInfo",
+    "path": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/.well-known/openid-configuration/"
+}
+1502453304.313 ProviderConfigurationResponse {
+    "acr_values_supported": [
+        "PASSWORD"
+    ],
+    "authorization_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/authorization",
+    "claim_types_supported": [
+        "normal",
+        "aggregated",
+        "distributed"
+    ],
+    "claims_parameter_supported": true,
+    "claims_supported": [
+        "locale",
+        "updated_at",
+        "email",
+        "profile",
+        "family_name",
+        "website",
+        "picture",
+        "gender",
+        "name",
+        "middle_name",
+        "email_verified",
+        "zoneinfo",
+        "preferred_username",
+        "phone_number_verified",
+        "given_name",
+        "phone_number",
+        "address",
+        "nickname",
+        "sub",
+        "birthdate"
+    ],
+    "end_session_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/end_session",
+    "grant_types_supported": [
+        "authorization_code",
+        "implicit",
+        "urn:ietf:params:oauth:grant-type:jwt-bearer"
+    ],
+    "id_token_encryption_alg_values_supported": [
+        "RSA1_5",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "A128KW",
+        "A192KW",
+        "A256KW",
+        "ECDH-ES",
+        "ECDH-ES+A128KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A256KW"
+    ],
+    "id_token_encryption_enc_values_supported": [
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512",
+        "A128GCM",
+        "A192GCM",
+        "A256GCM"
+    ],
+    "id_token_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512",
+        "none"
+    ],
+    "issuer": "https://example.com",
+    "jwks_uri": "https://rp.certification.openid.net:8080/static/jwks_ffIcgIPD7qyR1Qvo.json",
+    "registration_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration",
+    "request_object_encryption_alg_values_supported": [
+        "RSA1_5",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "A128KW",
+        "A192KW",
+        "A256KW",
+        "ECDH-ES",
+        "ECDH-ES+A128KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A256KW"
+    ],
+    "request_object_encryption_enc_values_supported": [
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512",
+        "A128GCM",
+        "A192GCM",
+        "A256GCM"
+    ],
+    "request_object_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512",
+        "none"
+    ],
+    "request_parameter_supported": true,
+    "request_uri_parameter_supported": true,
+    "require_request_uri_registration": true,
+    "response_modes_supported": [
+        "query",
+        "fragment",
+        "form_post"
+    ],
+    "response_types_supported": [
+        "code",
+        "id_token",
+        "id_token token",
+        "code id_token",
+        "code token",
+        "code id_token token"
+    ],
+    "scopes_supported": [
+        "openid",
+        "offline_access",
+        "email",
+        "address",
+        "profile",
+        "phone",
+        "openid"
+    ],
+    "subject_types_supported": [
+        "public",
+        "pairwise"
+    ],
+    "token_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/token",
+    "token_endpoint_auth_methods_supported": [
+        "client_secret_post",
+        "client_secret_basic",
+        "client_secret_jwt",
+        "private_key_jwt"
+    ],
+    "token_endpoint_auth_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512"
+    ],
+    "userinfo_encryption_alg_values_supported": [
+        "RSA1_5",
+        "RSA-OAEP",
+        "RSA-OAEP-256",
+        "A128KW",
+        "A192KW",
+        "A256KW",
+        "ECDH-ES",
+        "ECDH-ES+A128KW",
+        "ECDH-ES+A192KW",
+        "ECDH-ES+A256KW"
+    ],
+    "userinfo_encryption_enc_values_supported": [
+        "A128CBC-HS256",
+        "A192CBC-HS384",
+        "A256CBC-HS512",
+        "A128GCM",
+        "A192GCM",
+        "A256GCM"
+    ],
+    "userinfo_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/userinfo",
+    "userinfo_signing_alg_values_supported": [
+        "RS256",
+        "RS384",
+        "RS512",
+        "ES256",
+        "ES384",
+        "ES512",
+        "HS256",
+        "HS384",
+        "HS512",
+        "PS256",
+        "PS384",
+        "PS512",
+        "none"
+    ],
+    "version": "3.0"
+}
+1502453304.313 response {"token_endpoint_auth_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512"], "request_object_encryption_enc_values_supported": ["A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512", "A128GCM", "A192GCM", "A256GCM"], "claims_supported": ["locale", "updated_at", "email", "profile", "family_name", "website", "picture", "gender", "name", "middle_name", "email_verified", "zoneinfo", "preferred_username", "phone_number_verified", "given_name", "phone_number", "address", "nickname", "sub", "birthdate"], "subject_types_supported": ["public", "pairwise"], "end_session_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/end_session", "issuer": "https://example.com", "request_uri_parameter_supported": true, "scopes_supported": ["openid", "offline_access", "email", "address", "profile", "phone", "openid"], "request_object_encryption_alg_values_supported": ["RSA1_5", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A192KW", "A256KW", "ECDH-ES", "ECDH-ES+A128KW", "ECDH-ES+A192KW", "ECDH-ES+A256KW"], "token_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/token", "id_token_encryption_alg_values_supported": ["RSA1_5", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A192KW", "A256KW", "ECDH-ES", "ECDH-ES+A128KW", "ECDH-ES+A192KW", "ECDH-ES+A256KW"], "grant_types_supported": ["authorization_code", "implicit", "urn:ietf:params:oauth:grant-type:jwt-bearer"], "authorization_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/authorization", "userinfo_encryption_alg_values_supported": ["RSA1_5", "RSA-OAEP", "RSA-OAEP-256", "A128KW", "A192KW", "A256KW", "ECDH-ES", "ECDH-ES+A128KW", "ECDH-ES+A192KW", "ECDH-ES+A256KW"], "id_token_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512", "none"], "request_parameter_supported": true, "require_request_uri_registration": true, "response_types_supported": ["code", "id_token", "id_token token", "code id_token", "code token", "code id_token token"], "claims_parameter_supported": true, "acr_values_supported": ["PASSWORD"], "response_modes_supported": ["query", "fragment", "form_post"], "id_token_encryption_enc_values_supported": ["A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512", "A128GCM", "A192GCM", "A256GCM"], "registration_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/registration", "userinfo_encryption_enc_values_supported": ["A128CBC-HS256", "A192CBC-HS384", "A256CBC-HS512", "A128GCM", "A192GCM", "A256GCM"], "userinfo_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512", "none"], "version": "3.0", "token_endpoint_auth_methods_supported": ["client_secret_post", "client_secret_basic", "client_secret_jwt", "private_key_jwt"], "claim_types_supported": ["normal", "aggregated", "distributed"], "jwks_uri": "https://rp.certification.openid.net:8080/static/jwks_ffIcgIPD7qyR1Qvo.json", "userinfo_endpoint": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/userinfo", "request_object_signing_alg_values_supported": ["RS256", "RS384", "RS512", "ES256", "ES384", "ES512", "HS256", "HS384", "HS512", "PS256", "PS384", "PS512", "none"]}
+
+1502453315.092 init ========== Test tool version:1.0.4 ==========
+1502453315.092 http request {
+    "endpoint": "/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/authorization",
+    "method": "GET"
+}
+1502453315.093 request {
+    "name": "AuthorizationRequest",
+    "path": "https://rp.certification.openid.net:8080/angular-auth-oidc-client.config/rp-discovery-issuer-not-matching-config/authorization/"
+}
+1502453315.094 AuthorizationRequest {
+    "client_id": "FTMuhVTZ61bG",
+    "nonce": "N0.152043781866217481502453326517",
+    "redirect_uri": "https://localhost:44386",
+    "response_type": "id_token token",
+    "scope": "openid profile",
+    "state": "15024533265170.5341193647282234"
+}
+1502453315.101 AuthorizationResponse {
+    "access_token": "5+HIS2954rToX+CbQolRAqZ4sqF20hybTAJnbEK41hQQ+EHhPOjiashxNdxKscSrzNTymsGW53MgL7RqVT38kqzZKRmtMO/XLr/OISE+uc+Lk9cP7mN+kOYuKoAcnKVFbzdWpEtQrJKA7CTQfqCgnQ==",
+    "client_id": "FTMuhVTZ61bG",
+    "id_token": "eyJraWQiOiIyamd4ZEsybkcycFVZc3htdEZFaHVwSGlBSlRRNnFfUzlHMGlaajdLZXZzIiwiYWxnIjoiUlMyNTYifQ.eyJub25jZSI6ICJOMC4xNTIwNDM3ODE4NjYyMTc0ODE1MDI0NTMzMjY1MTciLCAiaWF0IjogMTUwMjQ1MzMxNSwgImF0X2hhc2giOiAid2pOUEIzQXMxRzJxZ3BhNF9fTnRfUSIsICJpc3MiOiAiaHR0cHM6Ly9ycC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXQ6ODA4MC9hbmd1bGFyLWF1dGgtb2lkYy1jbGllbnQuY29uZmlnL3JwLWRpc2NvdmVyeS1pc3N1ZXItbm90LW1hdGNoaW5nLWNvbmZpZyIsICJleHAiOiAxNTAyNTM5NzE1LCAic3ViIjogIjFiMmZjOTM0MWExNmFlNGUzMDA4Mjk2NWQ1MzdhZTQ3YzIxYTBmMjdmZDQzZWFiNzgzMzBlZDgxNzUxYWU2ZGIiLCAiYXVkIjogWyJGVE11aFZUWjYxYkciXSwgImF1dGhfdGltZSI6IDE1MDI0NTMzMTUsICJhY3IiOiAiUEFTU1dPUkQifQ.ENAcnPdiew6VrkDYNNzB0xW9E15RL-Fb-Xx7QRUVppbGpelDZ12AzwbAPxWSGuKNaPEiNcNcYS29qeKQjJ-pgwV7gQOIexYwa73kcKXS2_at-K0LAqdBwqFEPnSC9somRleKq_5-9lUzkYoxK7-UiuqYVQxb5vwDr1i6e-q9H9S4yiVUeoQ8_ZlAw7dEI_XT70pqVn_D96HAw8B4Py3c9OcN2Xp7cvLBV-FUFokaxNMgVkHd0Hv8DqRwBwdp-RYyU2Nk7uNzemHjavBrxCi2wBPzkH3fxKqgZYphtCK3vyj3sSiSJcUgZ0fNJYMXuaZOy-hTDKQnE6T-aNgrwc69hQ",
+    "scope": "openid profile",
+    "state": "15024533265170.5341193647282234",
+    "token_type": "Bearer"
+}
+1502453315.101 redirect https://localhost:44386#state=15024533265170.5341193647282234&scope=openid+profile&access_token=5%2BHIS2954rToX%2BCbQolRAqZ4sqF20hybTAJnbEK41hQQ%2BEHhPOjiashxNdxKscSrzNTymsGW53MgL7RqVT38kqzZKRmtMO%2FXLr%2FOISE%2Buc%2BLk9cP7mN%2BkOYuKoAcnKVFbzdWpEtQrJKA7CTQfqCgnQ%3D%3D&client_id=FTMuhVTZ61bG&id_token=eyJraWQiOiIyamd4ZEsybkcycFVZc3htdEZFaHVwSGlBSlRRNnFfUzlHMGlaajdLZXZzIiwiYWxnIjoiUlMyNTYifQ.eyJub25jZSI6ICJOMC4xNTIwNDM3ODE4NjYyMTc0ODE1MDI0NTMzMjY1MTciLCAiaWF0IjogMTUwMjQ1MzMxNSwgImF0X2hhc2giOiAid2pOUEIzQXMxRzJxZ3BhNF9fTnRfUSIsICJpc3MiOiAiaHR0cHM6Ly9ycC5jZXJ0aWZpY2F0aW9uLm9wZW5pZC5uZXQ6ODA4MC9hbmd1bGFyLWF1dGgtb2lkYy1jbGllbnQuY29uZmlnL3JwLWRpc2NvdmVyeS1pc3N1ZXItbm90LW1hdGNoaW5nLWNvbmZpZyIsICJleHAiOiAxNTAyNTM5NzE1LCAic3ViIjogIjFiMmZjOTM0MWExNmFlNGUzMDA4Mjk2NWQ1MzdhZTQ3YzIxYTBmMjdmZDQzZWFiNzgzMzBlZDgxNzUxYWU2ZGIiLCAiYXVkIjogWyJGVE11aFZUWjYxYkciXSwgImF1dGhfdGltZSI6IDE1MDI0NTMzMTUsICJhY3IiOiAiUEFTU1dPUkQifQ.ENAcnPdiew6VrkDYNNzB0xW9E15RL-Fb-Xx7QRUVppbGpelDZ12AzwbAPxWSGuKNaPEiNcNcYS29qeKQjJ-pgwV7gQOIexYwa73kcKXS2_at-K0LAqdBwqFEPnSC9somRleKq_5-9lUzkYoxK7-UiuqYVQxb5vwDr1i6e-q9H9S4yiVUeoQ8_ZlAw7dEI_XT70pqVn_D96HAw8B4Py3c9OcN2Xp7cvLBV-FUFokaxNMgVkHd0Hv8DqRwBwdp-RYyU2Nk7uNzemHjavBrxCi2wBPzkH3fxKqgZYphtCK3vyj3sSiSJcUgZ0fNJYMXuaZOy-hTDKQnE6T-aNgrwc69hQ&token_type=Bearer
 
